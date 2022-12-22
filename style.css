@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+nav {
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 100;
+    color: hsl(234, 12%, 34%);
+    opacity: 0.9;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: hsl(229, 96%, 17%);
+}
+
+.nav_txt {
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+    padding: 0 350px;
+    margin-top: 25px;
+}
+
+main {
+    max-width: 1200px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+h2 {
+    padding: 10px 0px 0px 35px;
+    color: hsl(229, 96%, 17%);
+}
+
+p {
+    padding: 0px 55px 0px 35px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4ae4e4;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20px, 1fr));
+    gap: 35px;
+    align-items: center;
+}
+
+.wrap .box.red {
+    margin-bottom: 35px;
+}
+
+.wrap .box {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(126, 133, 140, 0.2) 2px 28px 22px;
+    border-radius: 5px;
+}
+
+.wrap .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.wrap .box.aqua::after {
+    background-color: #45d3d3;
+}
+
+.wrap .box.red::after {
+    background-color: #ea5353;
+}
+
+.wrap .box.yellow::after {
+    background-color: #fcaf4a;
+}
+
+.wrap .box.blue::after {
+    background-color: #549ef2;
+}
+
+.wrap .box img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
