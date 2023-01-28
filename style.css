@@ -18,12 +18,13 @@ nav {
     margin-bottom: 50px;
 }
 
-.h1 {
+h1 {
     text-align: center;
     font-size: 28px;
     font-weight: 100;
     color: hsl(234, 12%, 34%);
     opacity: 0.9;
+    margin:0;
 }
 
 .h2 {
@@ -123,4 +124,17 @@ a:hover {
     position: absolute;
     bottom: 30px;
     right: 30px;
+}
+
+@media (max-width:960px){
+    .nav_txt{
+        text-align:center;
+        padding:0 200px;
+    }
+    
+    .wrap{
+        justify-content:center;
+        display:grid;
+        grid-template-columns:repeat(1,minmax(2px,0.8fr));
+    }
 }
