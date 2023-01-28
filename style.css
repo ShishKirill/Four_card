@@ -129,9 +129,13 @@ a:hover {
 
 @media (max-width:960px){
     .nav_txt{
+        max-width: 470px;
         text-align:center;
-        padding:0 120px;
     }
+    
+    .nav_txt p {
+    padding:0 55px;
+}
     
     .wrap{
         justify-content:center;
